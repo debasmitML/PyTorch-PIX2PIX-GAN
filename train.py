@@ -110,7 +110,7 @@ def run():
             batch_val_input = next(iter(val_loader))[0].to(args.device)
             generated_img = gen_model(batch_val_input)
             grid= make_grid(generated_img,normalize=True)
-            save_image(grid , f'./result/grid_generated_epoch{epoch}.jpg')
+            save_image(grid , f'./result/generated_epoch{epoch}.jpg')
             
             
        

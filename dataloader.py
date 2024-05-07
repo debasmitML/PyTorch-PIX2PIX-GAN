@@ -28,6 +28,7 @@ class cityDataset(Dataset):
         
         self.train_val_target_transform = A.Compose([
             
+            A.Resize(256,256),
             A.Normalize(mean=(0.5,0.5,0.5),std=(0.5,0.5,0.5)),
             ToTensorV2()
             

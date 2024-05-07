@@ -13,8 +13,8 @@ from torchvision.utils import make_grid , save_image
 def arguments():
     parser = argparse.ArgumentParser(description = "Define dynamic parameters for the model.")
     parser.add_argument('--epochs' , default = 20 , type = int , help = 'number of epochs')
-    parser.add_argument('--train_data_dir' , default = r'city_data\train' , type = str , help = 'training data directory path')
-    parser.add_argument('--val_data_dir' , default = r'city_data\val' , type = str , help = 'validation data directory path')
+    parser.add_argument('--train_data_dir' , default = './city_data/train' , type = str , help = 'training data directory path')
+    parser.add_argument('--val_data_dir' , default = './city_data/val' , type = str , help = 'validation data directory path')
     parser.add_argument('--train_batch_size' , default = 4 , type = int , help = 'define training data batch size')
     parser.add_argument('--val_batch_size' , default = 1 , type = int , help = 'define validation data batch size')
     parser.add_argument("--latent_dims", default=100, type = int , help="cuda device, i.e. 0 or cpu")
